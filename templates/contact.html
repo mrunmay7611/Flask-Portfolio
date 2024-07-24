@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{%block body %}
+    
+   <section id="contact_a" class="text_center py_3">
+        <div class="container">
+            <div class="special_title">Contact</div>
+            <div class="bottom_line"></div>
+            <p class="lead">Here You Can Contact Me..</p>
+            <form  action = "/contact" method="post">
+                <div class="input_field">
+                    <input type="text" name="name"class="text_input name_input" placeholder="Name">
+                    <input type="email" name="email" class="text_input email_input" placeholder="Email">
+                    <input type="text" name="subject"class="text_input subject_input" placeholder="Subject">
+                    <input type="text" name="phone"class="text_input phone_input" placeholder="Phone Number">
+                    <!--Section : Form -->
+    <textarea class="text_input message_input"name="message"placeholder="Message"></textarea>
+                </div>
+
+                <input type="submit" name="Submit" class="btn_dark">
+
+            </form>
+        </div>
+    </section>
+    
+    <!-- Section B : Contact Info -->
+    <section id="contact_b" class="py_2">
+        <div class="container">
+            <div class="contact_field">
+                <div>
+                    <i class="fas fa-envelope fa-3x"></i>
+                    <h3>Email</h3>
+                    <h4>Mrunmaykurkute@gmail.com</h4>
+                </div>
+                <div>
+                    <i class="fas fa-phone fa-3x"></i>
+                    <h3>Phone</h3>
+                    <h4>8459962658</h4>
+                </div>
+                <div>
+                    <i class="fas fa-address-card fa-3x"></i>
+                    <h3>Address</h3>
+                    <h4>Sangli,Maharastra</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section C -->
+    <section id="contact_c" class="py_3">
+        <div class="container">
+            <p>Let's Work Together To Built Something Big</p>
+        </div>
+    </section>
+
+
+    
+   
+{% endblock %}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7261063d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Mrunmay Kurkute | portfolio </title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header-home">
+        <div class="container">
+            <nav id="main-nav">
+                <img id="logo" src="{{url_for('static',filename='./img/logo2.png')}}" alt="my portfolio">
+
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header_content">
+                <h1>I am Mrunmay
+                    <span class="txt-type" data-wait="2000"
+                        data-words='["A Web-Developer", "An Electronics Engineer", "A Coder"]'></span>
+                </h1>
+                <p class="lead"></p>
+                <a href="work.html" class="btn_light">My Work</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section-A -->
+
+    <section id="home_c" class="text_center py_2">
+        <div class="conatiner">
+            <h1 class="special_title">
+                My Creative Process
+            </h1>
+            <div class="bottom_line"></div>
+            <p class="lead">
+                All of my projects are based off of a practiced
+                formula to get the result that I am looking for
+            </p>
+            <div class="process">
+                <div>
+                    <div class="bubble">
+                        <i class="fas fa-file-alt fa-4x process_icon my_2">
+                        </i>
+                        <div class="process_step">1</div>
+                    </div>
+                    <h3>Discuss The Project</h3>
+                    <p>
+                       If I am working in a Team the I first discuss or make the blue-print of the projects
+
+                    </p> 
+                </div>
+                <div>
+                    <div class="bubble">
+                        <i class="fas fa-desktop fa-4x process_icon my_2">
+                        </i>
+                        <div class="process_step">2</div>
+                    </div>
+
+                    <h3>Brainstorming ^ Concept</h3>
+                    <p>
+                       Check the Concept which are required to be implemented in the project if any of the new 
+                       concept is required then I  do the research and make the concept clear
+                    </p>
+                </div>
+                <div>
+                    <div class="bubble">
+                        <i class="fas fa-object-ungroup fa-4x process_icon my_2">
+                        </i>
+                        <div class="process_step">3</div>
+                    </div>
+                    <h3>UI</h3>
+                    <p>
+                        If I am working on the Web project then i prefer first to visualize the Frond-End
+                        nad then start the coding
+                    </p>
+                </div>
+                <div>
+                    <div class="bubble">
+                        <i class="fas fa-thumbs-up fa-4x process_icon my_2">
+                        </i>
+                        <div class="process_step">4</div>
+                    </div>
+
+                    <h3>Interaction</h3>
+                    <p>
+                        As working in a team we need to interact with each oother frequently and take the
+                        updates on the project and discuss what other things can we do to improve our project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main_footer">
+        <div class="footer_content">
+            <div class="social">
+                <a href="{{params['insta_url']}}" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="{{params['twitter_url']}}" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="{{params['fb_url']}}"target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="{{params['linkedin_url']}}" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            </div>
+            <div>
+                <p>Copyright &copy; 2024 . All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="{{url_for('static',filename='js/typewriter.js')}}"></script>
+</body>
+
+</html>

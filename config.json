@@ -1,0 +1,12 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri":"mysql+pymysql://root:@localhost/Portfolio",
+        "prod_uri":"mysql+pymysql://root:@localhost/Portfolio",
+        "fb_url":"http://facebok.com",
+        "twitter_url":"http://twitter.com",
+        "linkedin_url":"http://linkedin.com",
+        "insta_url":"http://instagram.com"
+    }
+}

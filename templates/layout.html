@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7261063d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<title>  Mrunmay Kurkute | portfolio  </title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header-inner">
+        <div class="container">
+            <nav id="main-nav">
+                <img id="logo" src="{{url_for('static',filename='./img/logo1.png')}}" alt="my portfolio">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a   href="/about">About</a></li>
+                    <li><a  href="/work">Work</a></li>
+                    <li><a  href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block body %}{% endblock %}
+
+
+    <!-- footer -->
+    <footer id="main_footer">
+        <div class="footer_content">
+            <div class="social">
+                <a href="{{params['insta_url']}}" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="{{params['twitter_url']}}" target="_blank">
+                <i class="fab fa-twitter"></i>
+               
+            </a>
+            <a href="{{params['fb_url']}}" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="{{params['linkedin_url']}}" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            </div>
+            <div>
+                <p>Copyright &copy; 2024 . All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <script src="{{url_for('static',filename='js/typewriter.js')}}"></script>
+</body>
+</html>

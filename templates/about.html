@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+{%block body %}
+    <!-- Section : A -->
+    <section id="about_a" class="text_center py_3">
+        <div class="container">
+            <h1 class="special_title">About Me</h1>
+            <div class="bottom_line"></div>
+            <p class="lead">Let me tell you about myself a little what I do..</p>
+            <div class="about_info">
+                <img src="{{url_for('static',filename='img/myImg.jpeg')}}" style="height: 500px;" class="bio_image"alt="">
+                <div class="bio bio_info bg_light">
+                    <h4>Your projects is in safe hands</h4>
+                    <p>Currently I am perceiving my B.tech degree  from Walchand college of enginerring,Sangli<br>.I am a third
+                        year Electronics student.I am always egar to  learn new things.<br>I am in search of the good opportunity
+                        which will help me grow more.
+                    </p>
+                </div>
+                <div class="awards">
+                    <i class="fas fa-award"></i>
+                    <h3>Award One</h3>
+                    <p>We won the first price in the ACM Hackathon 2K23<br>(Noice Track)
+                    </p>
+                </div>
+                <div class="awards">
+                    <i class="fas fa-award"></i>
+                    <h3>Award Two</h3>
+                    <p>District level fencing player
+                    </p>
+                </div>
+                <div class="awards">
+                    <i class="fas fa-award"></i>
+                    <h3>Award Three</h3>
+                    <p>
+                        Won fiirst price in the Meraki 2k23 A event by Elesa
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: B -->
+
+    <div id="about_b" class="text_center py_3 bg_dark">
+        <div class="conatiner">
+            <h1 class="special_title">Technical Skills</h1>
+            <div class="bottom_line"></div>
+            <div class="skills">
+                <h4>C:</h4>
+                <div class="progress">
+                    <div style="width:100%"></div>
+                </div>
+                <h4>CPP:</h4>
+                <div class="progress">
+                    <div style="width:80%"></div>
+                </div>
+                <h4>JAVA:</h4>
+                <div class="progress">
+                    <div style="width:70%"></div>
+                </div>
+                <h4>HTML & CSS:</h4>
+                <div class="progress">
+                    <div style="width:100%"></div>
+                </div>
+                <h4>JAVA-SCRIPT:</h4>
+                <div class="progress">
+                    <div style="width:80%"></div>
+                </div>
+                <h4>CANVA:</h4>
+                <div class="progress">
+                    <div style="width:70%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section : C -->
+    <!-- <section id="about_c" class="py-2">
+        <div class="container">
+            <div class="logo_container">
+                <img src="img/about-logos/logo-envato.png" alt="">
+                <img src="img/about-logos/logo-magento.png" alt="">
+                <img src="img/about-logos/logo-woocommerce.png" alt="">
+                <img src="img/about-logos/logo-wordpress.png" alt="">
+            </div>
+        </div>
+    </section> -->
+
+    
+    <!-- Footer -->
+    
+{% endblock %}

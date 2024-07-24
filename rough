@@ -1,0 +1,92 @@
+ 
+ <section id="home_b" class="text_center py_2">
+
+            <div class="stats">
+                <div>
+                    <ul>
+                        <li><i class="fas fa-user fa-3x"></i></li>
+                        <li class="stats_title">Clients</li>
+                        <li class="stats_count">100</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><i class="fas fa-award fa-3x"></i></li>
+                        <li class="stats_title">Awards</li>
+                        <li class="stats_count">3</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><i class="fas fa-hourglass-start fa-3x"></i></li>
+                        <li class="stats_title">Hours Worked</li>
+                        <li class="stats_count">3500</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><i class="fas fa-code-branch fa-3x"></i></li>
+                        <li class="stats_title">Projects Completed</li>
+                        <li class="stats_count">135</li>
+                    </ul>
+                </div>
+            </div>
+
+    </section>
+    <!-- Section : D -->
+    <section id="about_d" class="py_3">
+        <div class="container">
+            <h2 class="special_title">Group Members</h2>
+            <div class="bottom_line"></div>
+            <p class="lead text_center">introducing My Group Members</p>
+            <div class="testimonials">
+                <div>
+                    <p>
+                        She is an IT student. Who is a back-end Web-Developer and egar to learn new things and always supportive
+                    </p>
+                    <ul><br>
+                        <br>
+                        <li><img src="{{url_for('static',filename='img/testimonials/person1.jpg')}}" alt=""></li>
+                        <li>Rucha Ikare,India</li>
+                    </ul>
+                </div> 
+                <div>
+                    <p>
+                        She is an Electronics student. Who is a front-end Web-Developer.Her knowlege about the art makes the website looks facinating 
+                         and for effective.
+                    </p>
+                    <ul>
+                        <br>
+                        
+                        <li><img src="{{url_for('static',filename='img/testimonials/person2.jpg')}}" alt=""></li>
+                        <li>Advita Vankore,India</li>
+                    </ul>
+                </div> 
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid unde assumenda rem ipsum fugit rerum sapiente 
+                            aspernatur, eos fugiat minus quos ducimus velit soluta.
+                            Unde!
+                    </p>
+                    <ul>
+                        <li><img src="{{url_for('static',filename='img/testimonials/person3.jpg')}}" alt=""></li>
+                        <li>Shan, Seattle</li>
+                    </ul>
+                </div> 
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aliquid unde assumenda rem ipsum fugit rerum sapiente 
+                            aspernatur, eos fugiat minus quos ducimus velit soluta.
+                            Unde!
+                    </p>
+                    <ul>
+                        <li><img src="{{url_for('static',filename='img/testimonials/person4.jpg')}}" alt=""></li>
+                        <li>Lita, California</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </section>
